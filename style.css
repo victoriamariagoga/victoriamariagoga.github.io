@@ -1,0 +1,100 @@
+body {font-family: Arial, sans-serif; margin:15px; background: #e2d2bd; font-size: 20px; }
+
+h1 {font-family: Georgia, serif; text-align: center;} 
+h2 {font-family: Georgia, serif;color: #292522; text-align: center;}
+
+
+/* Prime due immagini */
+.immagini-iniziali {display: flex; justify-content: center; gap: 25px;}
+.immagini-iniziali img{width: 450px; height: 380px; object-fit: cover; border-radius: 15px; }
+
+/* width imposta la lunghezza di ciascuna immagine
+height imposta la stessa altezza per entrambe
+object-fit: cover ritaglia eventualmente l'immagine senza deformarla
+border-radius arrotonda gli angoli */
+
+/* Griglia delle forme del viso */
+.forme-viso {display: flex; flex-wrap:wrap; justify-content: center; gap:30px; width: 750px; margin:auto;}
+
+.volto {width: 220px; text-align:center;}
+
+.volto img {
+    width: 220px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* PAGINE DEDICATE ALLE FORME DEL VISO */
+
+/* Introduzione con immagine e testo */
+
+.intro-viso {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+}
+
+.intro-viso img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Sezione montature consigliate */
+.montature {
+    margin: 30px;
+}
+
+.galleria-montature {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);        /*Crea due colonne di immagini*/
+    justify-content: center;                /* è una regola CSS che serve a centrare orizzontalmente gli elementi all'interno di un contenitore che usa Flexbox o Grid*/
+    gap: 150px;
+    margin: 30px;
+}
+
+/* Singole schede delle montature */
+.modello {
+    width: 250px;
+    text-align:center;
+}
+
+.modello img {
+    width: 250px;           /* imposta la larghezza dell'immagine */
+    height: 190px;          /* imposta l'altezza dell'immagine */
+    object-fit: contain;     
+    border-radius: 12px;    /*Arrotonda gli angoli*/
+    background-color: white;
+}
+
+.modello h4 {
+    font-family: Georgia, serif;
+    color: #594236;
+    font-size: 18px;
+}
+
+.modello p {
+    line-height: 1.6;
+    text-align: left;
+}
+
+.curiosita {
+    background-color: #d8c5ae;
+    padding: 20px;          /*aggiunge spazio interno tra contenuto e i bordi del riquadro*/
+    margin: 30px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.curiosita button {
+    background-color:#594236;
+    color: white;
+    border: none;
+    padding: 10px 20px; /*spazio interno tra contenuto e bordi: 10px sopra e sotto, 20px a dx e sx*/
+    border-radius: 8px;
+    cursor: pointer;  /*trasforma l'icona del mouse in una manina quando l'utente passa sopra il pulsante*/
+    font-size: 15px;
+}

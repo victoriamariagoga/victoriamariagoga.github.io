@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<link href = "style.css" rel="stylesheet" type ="text/css">
+		<title>Trova i tuoi occhiali ideali</title>
+	</head>
+	<body>
+		<h1 style="color:#504136fa;font-size: 42px;"> Trova i tuoi occhiali ideali</h1>
+		<h2>Una guida pratica e semplice per capire qual è l'occhiale più adatto a te</h2>
+
+	<div class="immagini-iniziali">
+		<img src="occhiali.jpg">
+		<img src="https://www.walterattimonelli.com/wp-content/uploads/2020/09/chanel-occhiali-da-vista-con-catenella.jpg">
+	</div>
+
+		<p>L'acquisto di un nuovo paio di occhiali non è una cosa da poco.</p>
+		<p> Quando si entra in un negozio si viene sommersi da una quantità incredibile di modelli: dimensioni, forme e colori diversi.<br>Come si fa a scegliere la montatura adatta a noi?<br>
+			Sei nel posto giusto!<br>
+			In questa guida troverai consigli pratici per escludere i modelli sbagliati e valorizzare i tuoi lineamenti.</p>
+	
+
+	<p> Prendi uno specchio, guardati e seleziona la forma che più corrisponde al tuo viso: </p>
+
+	<div class="forme-viso">
+
+		<div class="volto">
+			<img src="https://i.pinimg.com/736x/3b/d1/6a/3bd16a048b3849804ab1d8854bae7243.jpg">
+			<h3>Viso ovale</h3>
+			<a href="viso-ovale.html">Scopri la montatura... </a>
+		</div>
+
+		<div class="volto">
+			<img src="viso_cuore.jpg">
+			<h3>Viso a cuore </h3>
+			<a href="viso-cuore.html">Scopri la montatura...</a>
+		</div>
+
+		<div class="volto">
+			<img src="https://i.pinimg.com/736x/3c/a8/10/3ca81048d0d696177f669222b05af77f.jpg">
+			<h3>Viso quadrato</h3>
+			<a href="viso-quadrato.html">Scopri la montatura...</a>
+		</div>
+
+		<div class="volto">
+			<img src="viso_diamante.jpg">
+			<h3>Viso a diamante</h3>
+			<a href="viso-diamante.html">Scopri la montatura...</a>
+		</div>
+
+		<div class="volto">
+			<img src="viso_rotondo.png">
+			<h3>Viso rotondo</h3>
+			<a href="viso-rotondo.html">Scopri la montatura...</a>
+		</div>
+
+	</div>
+
+	<div class="curiosita">
+		<h3>Lo sapevi che...?</h3>
+
+		<button onclick="mostraCuriosita()">
+			Clicca per scoprire
+		</button>
+
+		<p id="testo" style="display:none;">
+			<b>La forma del viso non è tutto</b> <br>
+			La forma del viso è soltanto un punto di partenza: anche il colore, le dimensioni
+			della montatura e il tuo stile personale contribuiscono alla scelta degli occhiali giusti!
+		</p>
+	</div>
+
+	<script>
+	function mostraCuriosita(){
+		document.getElementById("testo").style.display = "block";
+
+	}
+	</script>
+
+	</body>
+</html>
